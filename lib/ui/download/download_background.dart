@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-class DownloadStartCloseButton extends StatelessWidget {
-  const DownloadStartCloseButton({Key? key}) : super(key: key);
-
+class DownloadIndicatorBackground extends StatelessWidget {
+  const DownloadIndicatorBackground({Key? key, required this.backgroundColor})
+      : super(key: key);
+  final Color backgroundColor;
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: 1.0,
       child: CustomPaint(
-        painter: BackgroundPainter(),
+        painter: BackgroundPainter(backgroundColor),
       ),
     );
   }
@@ -24,7 +25,7 @@ class BackgroundPainter extends CustomPainter {
     final radius = size.width / 2;
     final backgroundPainter = Paint()
       ..isAntiAlias = true
-      ..color = Colors.blue
+      ..color = color
       ..style = PaintingStyle.fill;
     canvas.drawCircle(center, radius, backgroundPainter);
   }

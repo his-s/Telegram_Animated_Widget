@@ -3,16 +3,19 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class DownloadIndicatorHand extends StatelessWidget {
-  const DownloadIndicatorHand({Key? key}) : super(key: key);
-
+  const DownloadIndicatorHand(
+      {Key? key, required this.indicatorColor, required this.progress})
+      : super(key: key);
+  final Color indicatorColor;
+  final double progress;
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
       aspectRatio: 1.0,
       child: CustomPaint(
         painter: IndicatorPainter(
-          progress: .5,
-          color: Colors.orange,
+          progress: progress,
+          color: indicatorColor,
         ),
       ),
     );
