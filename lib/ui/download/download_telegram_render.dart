@@ -48,11 +48,6 @@ class DownloadTelegramRender extends StatelessWidget {
                   curve: curve,
                 )
               : const SizedBox(),
-          AnimatedIconPausePlay(
-            isStarted: isStarted,
-            iconColor: iconColor,
-            radius: radius,
-          ),
         ],
       ),
     );

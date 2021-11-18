@@ -9,10 +9,15 @@ class HomePage extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: DownloadTelegramRender(
-          radius: 180,
-          completeDuration: Duration(milliseconds: 50000),
+          radius: 300,
+          completeDuration: Duration(milliseconds: 500000),
           isCompleted: false,
           isStarted: true,
+          rotationSpeed: 1,
+          indicatorColor: Colors.white,
+          backgroundColor: Colors.blue,
+          iconColor: Colors.white,
+          curve: Curves.ease,
         ),
       ),
     );

@@ -22,7 +22,7 @@ class _AnimatedIconPausePlayState extends State<AnimatedIconPausePlay>
   void initState() {
     super.initState();
     _iconController = AnimationController(
-        vsync: this, duration: const Duration(milliseconds: 500));
+        vsync: this, duration: const Duration(milliseconds: 100));
   }
 
   void animatedIcon() {
