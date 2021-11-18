@@ -32,7 +32,7 @@ class IndicatorPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final center = Offset(size.width / 2, size.height / 2);
     final strokeWidth = size.width / 11;
-    final radius = (size.width - strokeWidth - 15) / 2;
+    final radius = (size.width - strokeWidth - 6) / 2;
     final handPainter = Paint()
       ..isAntiAlias = true
       ..strokeWidth = strokeWidth

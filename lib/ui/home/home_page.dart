@@ -1,28 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:telegram_widgets/ui/download/download_indicator.dart';
-import 'package:telegram_widgets/ui/download/download_background.dart';
+import 'package:telegram_widgets/ui/download/download_telegram_render.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.orange,
+    return const Scaffold(
       body: Center(
-        child: SizedBox(
-          height: 180,
-          child: Stack(
-            children: [
-              DownloadIndicatorBackground(
-                backgroundColor: Colors.blue,
-              ),
-              DownloadIndicatorHand(
-                progress: .6,
-                indicatorColor: Colors.white,
-              ),
-            ],
-          ),
+        child: DownloadTelegramRender(
+          radius: 180,
+          completeDuration: Duration(milliseconds: 50000),
+          isCompleted: false,
+          isStarted: true,
         ),
       ),
     );
