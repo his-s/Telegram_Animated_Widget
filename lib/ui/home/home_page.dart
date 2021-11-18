@@ -16,7 +16,6 @@ class HomePage extends StatelessWidget {
           rotationSpeed: 1,
           indicatorColor: Colors.white,
           backgroundColor: Colors.orange,
-          iconColor: Colors.white,
           curve: Curves.ease,
         ),
       ),
