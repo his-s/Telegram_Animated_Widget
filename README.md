@@ -18,3 +18,6 @@ samples, guidance on mobile development, and a full API reference.
 
 https://user-images.githubusercontent.com/70527079/142425596-7becf4c3-d94d-4901-b79c-2ea54b7115e2.mp4
 
+This code not completed yet . this just my journey of start learning animation in flutter and custom paint first try 
+it and feel free to reedit and desgin it again and i will keep editting it as well thanks for clone this tiny project 
+feel free to star this repo and follow me if you found this is useful . 
