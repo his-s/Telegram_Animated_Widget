@@ -1,9 +1,7 @@
 import 'dart:async';
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-
-import 'package:telegram_widgets/ui/download/animated_download_indicator.dart';
+import 'animated_download_indicator.dart';
 
 class AnimatedDownloadWithRotation extends StatefulWidget {
   const AnimatedDownloadWithRotation(

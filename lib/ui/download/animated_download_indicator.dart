@@ -1,7 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:telegram_widgets/ui/download/download_indicator.dart';
+import 'download_indicator.dart';
 
 class AnimatedDownloadIndicator extends StatefulWidget {
   const AnimatedDownloadIndicator({

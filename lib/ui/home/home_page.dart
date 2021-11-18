@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telegram_widgets/ui/download/download_telegram_render.dart';
+import '../download/download_telegram_render.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -9,13 +9,13 @@ class HomePage extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: DownloadTelegramRender(
-          radius: 300,
-          completeDuration: Duration(milliseconds: 500000),
+          radius: 250,
+          completeDuration: Duration(milliseconds: 500),
           isCompleted: false,
           isStarted: true,
           rotationSpeed: 1,
           indicatorColor: Colors.white,
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.orange,
           iconColor: Colors.white,
           curve: Curves.ease,
         ),

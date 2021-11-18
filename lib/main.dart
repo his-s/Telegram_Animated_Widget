@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:telegram_widgets/ui/home/home_page.dart';
-
-import 'ui/download/download_telegram_render.dart';
+import 'ui/home/home_page.dart';
 
 void main() {
   runApp(const MyApp());
