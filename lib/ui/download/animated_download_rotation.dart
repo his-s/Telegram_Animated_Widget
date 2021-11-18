@@ -1,6 +1,6 @@
-import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'animated_download_indicator.dart';
 
 class AnimatedDownloadWithRotation extends StatefulWidget {
@@ -27,14 +27,13 @@ class AnimatedDownloadWithRotation extends StatefulWidget {
 class _AnimatedDownloadWithRotationState
     extends State<AnimatedDownloadWithRotation>
     with SingleTickerProviderStateMixin {
-  late final Timer _timer;
   double rotationSpeed = 0;
-
+  late final Ticker _ticker;
   @override
   void initState() {
     super.initState();
     rotationSpeed = 0;
-    _timer = Timer.periodic(const Duration(milliseconds: 1), (_) {
+    _ticker = createTicker((elapsed) {
       if (mounted) {
         setState(() {
           if (!widget.isCompleted && widget.isStarted) {
@@ -43,6 +42,7 @@ class _AnimatedDownloadWithRotationState
         });
       }
     });
+    _ticker.start();
   }
 
   @override

@@ -10,10 +10,10 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: DownloadTelegramRender(
           radius: 250,
-          completeDuration: Duration(milliseconds: 500),
+          completeDuration: Duration(milliseconds: 50000),
           isCompleted: false,
           isStarted: true,
-          rotationSpeed: 1,
+          rotationSpeed: 6,
           indicatorColor: Colors.white,
           backgroundColor: Colors.orange,
           curve: Curves.ease,
